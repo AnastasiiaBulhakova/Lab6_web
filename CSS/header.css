@@ -4,5 +4,22 @@ header {
     background-color: rgb(26, 63, 158);
     color: white;
     text-align: center;
+}
 
+ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Лабораторна робота №7</h2>
+        <p>Булгакова Анастасія Анд-31</p>
+        <p>Варіант 4</p>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Лабораторна робота №6</a> </li>
+                <li> <a href="Lab7.html">Лабораторна робота №7</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h3>
+            Завдання 1
+        </h3>
+        <p>
+            Дано блок з кнопкою "закрити блок". При натисканні на цю кнопку блок
+            повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна
+            зникнути разом з ним. Блоків може бути будь-яка кількість, допускається щоб
+            один з блоків був всередині іншого. Кожен блок закриває своя кнопка.
+        </p>
+        <div class="boxs">
+            <div class="box">
+
+                <button onclick="closeBlock(this)">Закрити</button>
+
+                <div class="box box1">
+
+                    <button onclick="closeBlock(this)">Закрити</button>
+                </div>
+            </div>
+
+            <div class="box box2">
+
+                <button onclick="closeBlock(this)">Закрити</button>
+            </div>
+        </div>
+        <h3>
+            Завдання 2
+        </h3>
+        <p>
+            Дана таблиця з числами. При натисканні на комірку, вона
+            активується і стає червоного кольору. Активувати можна багато комірок. Під
+            таблицею кнопка. При натисканні цієї кнопки в абзац нижче виведіть суму
+            активованих комірок. Реалізуйте також кнопку "скинути активовані комірки".
+        </p>
+        <h3>Таблиця чисел</h3>
+
+        <table id="myTable">
+            <tr>
+                <td onclick="activate(this)">5</td>
+                <td onclick="activate(this)">3</td>
+                <td onclick="activate(this)">7</td>
+            </tr>
+            <tr>
+                <td onclick="activate(this)">2</td>
+                <td onclick="activate(this)">4</td>
+                <td onclick="activate(this)">6</td>
+            </tr>
+        </table>
+
+        <button onclick="sumActive()">Сума активних комірок</button>
+        <button onclick="resetActive()">Скинути</button>
+
+        <p id="result"></p>
+    </article>
+    <script src="JS/1.js"></script>
+    <script src="JS/2.js"></script>
+</body>
+
+</html>

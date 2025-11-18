@@ -1,0 +1,51 @@
+.boxs {
+    position: relative;
+    margin: 30px;
+    height: 500px;
+}
+
+.box {
+    background-color: rgb(238, 212, 178);
+    padding: 15px;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+}
+
+.box1 {
+    background-color: rgb(177, 227, 180);
+    left: 60px;
+}
+
+.box2 {
+    background-color: rgb(204, 177, 227);
+    top: 70px
+}
+
+.box button {
+    width: 120px;
+    height: 60px;
+    top: 115px;
+    right: 115px;
+    position: absolute;
+    font-size: clamp(5px, 1vw, 40px);
+    padding: 0;
+}
+
+
+#myTable {
+
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 40px);
+
+}
+
+#myTable td {
+
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
