@@ -1,0 +1,30 @@
+.Animal {
+    display: flex;
+    gap: 50px;
+}
+
+.input-block {
+    background: #ffffff;
+    border: 1px solid rgb(26, 63, 158);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.input-block input {
+    width: 90%;
+    padding: 10px;
+    font-size: clamp(15px, 2vw, 35px);
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+.result-block {
+    background: #eef3ff;
+    border-left: 5px solid rgb(26, 63, 158);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}

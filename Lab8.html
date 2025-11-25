@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Лабораторна робота №7</h2>
+        <p>Булгакова Анастасія Анд-31</p>
+        <p>Варіант 4</p>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Лабораторна робота №6</a> </li>
+                <li> <a href="Lab7.html">Лабораторна робота №7</a> </li>
+                <li><a href="Lab8.html">Лабораторна робота №7</a> </li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h3>
+            Завдання
+        </h3>
+        <p>
+            Базовий клас: Тварина (поля: кличка, ріст - h в м)
+            Метод: Вага тварини - k * h 3 кг, де k-коефіцієнт.
+            Нащадок: Кішка (k = 15, поле - порода тварини)
+            Зміни в нащадках: Перевести вагу тварини в грами.
+        </p>
+        <h3>Дані про тварин</h3>
+        <div class="Animal">
+            <div class="input-block">
+                <h4>Тварина</h4>
+                Кличка:<br>
+                <input id="name">
+
+                Ріст (м):<br>
+                <input id="height" type="number" step="0.01">
+
+                Коефіцієнт k:<br>
+                <input id="coef" type="number" step="0.1">
+            </div>
+
+            <div class="input-block">
+                <h4>Кішка</h4>
+                Кличка:<br>
+                <input id="catName">
+
+                Ріст (м):<br>
+                <input id="catHeight" type="number" step="0.01">
+
+                Порода:<br>
+                <input id="breed">
+            </div>
+        </div>
+
+        <button onclick="calcAnimal()">Розрахувати</button>
+
+        <h3>Результати</h3>
+
+        <div class="result-block">
+            <p id="w1"></p>
+            <p id="w2"></p>
+            <p id="br"></p>
+        </div>
+    </article>
+    <script src="JS/3.js"></script>
+</body>
+
+</html>
